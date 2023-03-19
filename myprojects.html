@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>My Website</title>
+  </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark text-light bg-dark">
+        <a class="navbar-brand" href="#">Hritik Dhiman</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myresume.html">My Resume</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="myprojects.html">My Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contact.html">Contact me</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container text-left mt-5">
+        <h1>My Projects</h1>
+        <p>All these projetcs codes are not copied.</p>
+    </div>
+    <div class="container text-left border-top">
+        <h1>Band Name Generator</h1>
+        <p>I created a band name Generator by using python .This is a very simple program and also this is my first
+            project.In this program user inputs city name and surname then program slice the city name and surname and
+            merge the sliced parts and print it as a band name.
+        </p>
+        <p>The python code of this project is shown below:</p>
+        <pre><code class="text-center text-danger">
+ print("Welcome to band name generator")
+ City_name=input("Enter your city name\n")
+ surname=input("Enter your Surname\n")
+ band=City_name[0:5]
+ Band_n=surname[0:5]
+ Band_name=band+Band_n
+
+ print("band name for you is", Band_name ,'band')
+        </code>
+    </pre>
+    </div>
+    <div class="container text-left border-top">
+        <h1>Tip Calculator</h1>
+        <p>I created a tip money Calculator using python,which calculates tip money from the bill money contributers.</p>
+        <p>The python code of this project is shown below: </p>
+        <pre>
+            <code class="text-danger">
+print("Welcome to the tip Calculator")
+bill = float(input("What was your total bill ?\n"))
+split = float(input("How many people to split the bill\n"))
+tip_percent = float(input("What percentage tip would you like to give?\n 5,10 or 15\n"))
+percent=bill*(tip_percent/100)
+new_bill=percent+bill
+bill_split=new_bill/split
+print("Each person should pay:",int(bill_split))
+            </code>
+        </pre>
+    </div>
+    <div class="container text-left border-top">
+        <h1>BMI Calculator</h1>
+        <p>I created a BMI calculator using python,in this program users can check their BMI by inputing their Height im metres and weight in kilograms</p>
+        <p>The python code of this program is shown below:</p>
+        <pre>
+            <code class="text-danger">
+print("Welcome in the BMI Calculator")
+weight=float(input("Enter your Weight\n"))
+height=float(input("Enter your Height\n"))
+BMi=weight/(height*height)
+ 
+
+if BMi<18.5:
+    print("Your bmi is ",round(BMi),"You are underweight")
+elif BMi>18.5 and BMi<25:
+        print("Your bmi is",round(BMi,"You have normal weight"))
+elif BMi>25 and BMi<30:
+        print("Your bmi is ",round(BMi),"Your are slightly overweight")
+elif BMi>30 and BMi<35:
+        print("Your bmi is ",round(BMi),"You are obese")
+elif BMi>35:
+        print("Your bmi is ",round(BMi),"You are clinically obese")
+            </code>
+        </pre>
+    </div>
+    <div class="container text-left border-top">
+        <h1>Treasure hunt game</h1>
+        <p>I created a Treasure hunt game using python,in which user have to input some details and program will ask the user to choose any option given by the program and the options opted by the user decides whether they get Treasure or not.
+        </p>
+        <p>The code of this game is shown below:
+        </p>
+        <pre>
+            <code class="text-danger">
+print("Welcome to Treasure Island\n Your mission is to find the treasure")
+direction = input("You're at a cross.Where do you want to go ? Type 'left' or 'right'\n")
+if direction == "left":
+    work = input("You came to a lake.There is an island in middle of the lake,type 'wait' to wait for the boat or type 'swim' to swim to the island\n")
+    if work == "wait":
+        color = input(You arrived at island safely,there is a house with 3 doors.one red,one yellow,one blue.Which colour do you choose ?")
+        if color == "red":
+            print("its a room of fire .game over")
+        if color == "yellow":
+            print("there is a treasure box with gold,you win the game")
+        else:
+            print("there is a snake ,game over")
+    elif work == "swim":
+        print("There is a crocodile in the lake ,game over")
+else:
+    print("there are lions ,game is over.")
+            </code>
+        </pre>
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body bg-dark text-light ">
+            <h5 class="card-title">Follow Me on These Platforms</h5>
+            <p class="card-text">
+                <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook mr-2 fa-2xl"></i></a>
+                <a href="https://in.linkedin.com/"> <i class="fa-brands fa-linkedin mr-2 fa-2xl"></i></a>
+                <a href="https://github.com/login"><i class=" fa-2xl fa-brands fa-github mr-2"></i> </a>
+                <a href="https://www.instagram.com/accounts/login/"><i
+                        class="fa-brands fa-instagram mr-2 fa-2xl"></i></a>
+
+            </p>
+            <a href="index.html" class="btn btn-primary">Back to Homepage</a>
+        </div>
+        <div class="card-footer text-muted">
+            Thanks to visit
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
